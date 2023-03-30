@@ -1,10 +1,8 @@
-import Bookshelf from '../components/Bookshelf';
-import InputBook from '../components/InputBook';
+import BookstoreLogic from '../components/BookstoreLogic';
 
 const Home = () => (
   <div>
-    <Bookshelf />
-    <InputBook />
+    <BookstoreLogic />
   </div>
 );
 
