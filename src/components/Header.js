@@ -4,9 +4,7 @@ import Navbar from './Navbar';
 const Header = () => (
   <>
     <header>
-      <div>
-        <p>Bookstore CMS</p>
-      </div>
+      <span>Bookstore CMS</span>
       <Navbar />
     </header>
     <Outlet />

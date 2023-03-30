@@ -4,10 +4,12 @@ const BookItem = ({ item }) => (
   <li>
     <p>
       title:
+      {' '}
       {item.title}
     </p>
     <p>
       Author:
+      {' '}
       {item.author}
     </p>
   </li>

@@ -21,13 +21,11 @@ const InputBook = ({ addBook }) => {
   };
 
   return (
-    <>
-      <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Add title" value={title} onChange={handleTitleChange} />
-        <input type="text" placeholder="Add author" value={author} onChange={handleAuthorChange} />
-        <button type="submit">Submit</button>
-      </form>
-    </>
+    <form onSubmit={handleSubmit}>
+      <input type="text" placeholder="Add title" value={title} onChange={handleTitleChange} />
+      <input type="text" placeholder="Add author" value={author} onChange={handleAuthorChange} />
+      <button type="submit">Submit</button>
+    </form>
   );
 };
 
