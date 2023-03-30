@@ -30,9 +30,15 @@ const BookstoreLogic = () => {
     setBookList([...bookList, newBook]);
   };
 
+  const removeBook = (id) => {
+    setBookList([
+      ...bookList.filter((book) => book.id !== id),
+    ]);
+  };
+
   return (
     <div>
-      <Bookshelf bookList={bookList} />
+      <Bookshelf bookList={bookList} removeBook={removeBook} />
       <InputBook addBook={addBook} />
     </div>
   );
