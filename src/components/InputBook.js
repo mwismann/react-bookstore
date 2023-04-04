@@ -19,7 +19,6 @@ const InputBook = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const id = uuid();
-    console.log(id);
 
     dispatch(addBook({ id, title, author }));
     setTitle('');
