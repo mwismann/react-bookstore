@@ -1,8 +1,8 @@
-import BookstoreLogic from '../components/BookstoreLogic';
+import Bookshelf from '../components/Bookshelf';
 
 const Home = () => (
   <div>
-    <BookstoreLogic />
+    <Bookshelf />
   </div>
 );
 
