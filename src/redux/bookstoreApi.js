@@ -1,5 +1,5 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const API_ID = 'C98irUr8Ng5NvBQ6AbEs';
 
@@ -17,7 +17,7 @@ export const fetchBooks = createAsyncThunk(
 
 export const postBook = createAsyncThunk(
   'booksList/postBook',
-  async ({URL, newBook }, { rejectWithValue }) => {
+  async ({ URL, newBook }, { rejectWithValue }) => {
     try {
       const { data } = await axios.post(`${URL + API_ID}/books`, newBook, {
         headers: {
@@ -33,7 +33,7 @@ export const postBook = createAsyncThunk(
 
 export const removeBook = createAsyncThunk(
   'booksList/removeBook',
-  async ({URL, id }, { rejectWithValue }) => {
+  async ({ URL, id }, { rejectWithValue }) => {
     try {
       const { data } = await axios.delete(`${URL + API_ID}/books/${id}`);
       return data;
