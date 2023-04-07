@@ -14,10 +14,29 @@ const Book = ({ id, title, author }) => {
   };
 
   return (
-    <li className="book-item">
-      <p>{title}</p>
-      <p>{author}</p>
-      <button type="button" onClick={() => handleRemove()}>Remove</button>
+    <li className="w-full p-8 pr-40 flex items-center font-['Roboto_Slab'] bg-white border border-[#e8e8e8] rounded">
+      <div className="grow">
+        <span className="text-sm font-['Montserrat'] text-[#121212]/50 font-bold">Science Fiction</span>
+        <h2 className="text-[1.375rem] font-bold tracking-tight">{title}</h2>
+        <p className="text-sm text-[#4386bf] font-light leading-3">{author}</p>
+        <div className="mt-8 flex items-center gap-4 text-sm text-[#4386bf] font-light divide-x-2">
+          <button type="button">Comments</button>
+          <button type="button" className="pl-4" onClick={() => handleRemove()}>Remove</button>
+          <button type="button" className="pl-4">Edit</button>
+        </div>
+      </div>
+      <div className="px-24 flex items-center gap-7 border-r-2 border-[#e8e8e8]">
+        <div className="w-16 h-16 border-4 border-[#379cf6] border-l-[#e8e8e8] rounded-full rotate-45" />
+        <div className="font-['Montserrat']">
+          <p className="text-4xl text-[#121212]">75%</p>
+          <p className="text-sm text-[#121212]/50">Completed</p>
+        </div>
+      </div>
+      <div className="ml-16 font-light text-sm uppercase">
+        <p className="text-[#121212]/50">Current Chapter</p>
+        <p className="mt-1 text-[#121212] text-base tracking-tight">Chapter 12</p>
+        <button type="button" className="mt-6 py-2 px-8 tracking-wide uppercase text-white bg-[#0290ff] rounded">Update Progress</button>
+      </div>
     </li>
   );
 };

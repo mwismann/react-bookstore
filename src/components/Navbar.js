@@ -6,10 +6,10 @@ const links = [
 ];
 
 const Navbar = () => (
-  <nav>
-    <ul>
+  <nav className="flex items-center grow">
+    <ul className="flex items-center justify-start gap-4">
       {links.map((link) => (
-        <li key={link.text}>
+        <li key={link.text} className={`${(link.text === 'Books') ? 'text-[#121212]' : 'text-[#121212]/50'} text-sm tracking-widest`}>
           <NavLink to={link.path}>{link.text}</NavLink>
         </li>
       ))}
