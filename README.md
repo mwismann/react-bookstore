@@ -22,7 +22,7 @@
 
 # 📖 [react-bookstore] <a name="about-project"></a>
 
-**[react-bookstore]** is a SPA built with `` [React](https://react.dev/) ``, `` [Redux Toolkit](https://redux-toolkit.js.org/) ``, and `` [Tailwind](https://tailwindcss.com/) ``. The app make use of the `` [Bookstore API](https://www.notion.so/Bookstore-API-51ea269061f849118c65c0a53e88a739) `` as the backend, through `` [axios](https://axios-http.com/docs/intro) `` and `` [createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk) ``.
+**[react-bookstore]** is a SPA built with [React](https://react.dev/), [Redux Toolkit](https://redux-toolkit.js.org/), and [Tailwind](https://tailwindcss.com/). The app make use of the [Bookstore API](https://www.notion.so/Bookstore-API-51ea269061f849118c65c0a53e88a739) as the backend, through [axios](https://axios-http.com/docs/intro) and [createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk).
 
 ## 🛠 Built With <a name="built-with"></a>
 
