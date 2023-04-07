@@ -24,8 +24,8 @@ const Bookshelf = () => {
   return (
     <div className="container w-10/12 mx-auto">
       <section className="py-9 border-b-2 border-[#e8e8e8]">
-        {isLoading && <h2>Loading...</h2>}
-        {error && <h2>{error}</h2>}
+        {isLoading && <h2 className="text-xl text-[#0290ff]">Loading...</h2>}
+        {error && <h2 className="text-xl text-[#dc2929]">{error}</h2>}
         <ul className="flex flex-col gap-5">
           {books}
         </ul>
