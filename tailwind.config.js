@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const req = require('tailwindcss-animation-delay');
+
 module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
@@ -6,5 +8,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    req,
+  ],
 };
