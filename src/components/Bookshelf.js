@@ -26,7 +26,7 @@ const Bookshelf = () => {
       <section className="py-9 border-b-2 border-[#e8e8e8]">
         {isLoading && <h2>Loading...</h2>}
         {error && <h2>{error}</h2>}
-        <ul className="flex flex-col gap-4">
+        <ul className="flex flex-col gap-5">
           {books}
         </ul>
       </section>
