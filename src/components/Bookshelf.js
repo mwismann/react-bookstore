@@ -22,16 +22,16 @@ const Bookshelf = () => {
   ));
 
   return (
-    <>
-      <section className="bookshelf">
+    <div className="container w-10/12 mx-auto">
+      <section className="py-9 border-b-2 border-[#e8e8e8]">
         {isLoading && <h2>Loading...</h2>}
         {error && <h2>{error}</h2>}
-        <ul>
+        <ul className="flex flex-col gap-4">
           {books}
         </ul>
       </section>
       <InputBook />
-    </>
+    </div>
   );
 };
 
