@@ -22,7 +22,7 @@
 
 # 📖 [react-bookstore] <a name="about-project"></a>
 
-**[react-bookstore]** is a project where I'll be creating a SPA with React. For the moment I set up the repo, so stay tuned for the future changes!
+**[react-bookstore]** is a SPA built with `` [React](https://react.dev/) ``, `` [Redux Toolkit](https://redux-toolkit.js.org/) ``, and `` [Tailwind](https://tailwindcss.com/) ``. The app make use of the `` [Bookstore API](https://www.notion.so/Bookstore-API-51ea269061f849118c65c0a53e88a739) `` as the backend, through `` [axios](https://axios-http.com/docs/intro) `` and `` [createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk) ``.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -35,28 +35,31 @@
     <li>CSS</li>
     <li>JavaScript</li>
     <li>React</li>
+    <li>Redux Toolkit</li>
+    <li>Tailwind</li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li>No server at the moment</li>
+    <li>React Routing service</li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li>No database was used in this project.</li>
+    <li>Bookstore API</li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
-- **[Correct set up of React environment]**
-- **[Correct set up of Linters and GitFlow environment.]**
 - **[Correct flow of React components]**
+- **[Correct Redux integration]**
+- **[Correct async consumption of API with axios]**
+- **[Correct integration of Tailwindcss styling]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,10 +128,7 @@ To install this project dependencies run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[Add logic to the Calculator]**
-- **[Project components]**
-- **[Project events]**
-- **[Fetch data from API]**
+- **[Add filter by categories]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
